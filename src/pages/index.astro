@@ -9,11 +9,57 @@ import Layout from '../layouts/Layout.astro';
  */
 const title = "Giulia`s Portfolio";
 const siteName = 'Giulia`s Portfolio';
-const siteDescription = 'Showcasing the professional work and projects.';
+const siteDescription = 'Showcasing professional work, projects, and collaborations.';
 ---
 
 <Layout title={title} siteName={siteName} siteDescription={siteDescription}>
-	<Avatar />
-	<Details />
-	<Socials />
+  <Avatar />
+  <Details />
+  <Socials />
+
+  <!-- Skills Section -->
+  <section class="py-16 max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl font-semibold mb-6">Skills</h2>
+    <ul class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <li class="border rounded-lg p-4">Azure Data & AI</li>
+      <li class="border rounded-lg p-4">Python</li>
+      <li class="border rounded-lg p-4">Astro & Vercel</li>
+      <li class="border rounded-lg p-4">SQL</li>
+      <li class="border rounded-lg p-4">Google Sheets Automation</li>
+      <li class="border rounded-lg p-4">Web Development</li>
+      <li class="border rounded-lg p-4">Project Management</li>
+      <li class="border rounded-lg p-4">Marketing Strategy</li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="py-16 max-w-4xl mx-auto">
+    <h2 class="text-3xl font-semibold mb-6 text-center">Projects</h2>
+    <div class="grid gap-6 md:grid-cols-2">
+
+      <div class="border rounded-lg p-6">
+        <h3 class="text-xl font-bold">Southwest Bowls Division Website</h3>
+        <p class="text-sm mt-2">
+          A fully managed Squarespace site with integrated Google Sheets automation for live tournament results,
+          real-time standings, and event updates for the Southwest Division of Bowls USA.
+        </p>
+        <a href="https://swlawnbowls.org" class="text-blue-500 hover:underline mt-4 inline-block" target="_blank">
+          Visit Website
+        </a>
+      </div>
+
+      <div class="border rounded-lg p-6">
+        <h3 class="text-xl font-bold">Science Inside Out Website</h3>
+        <p class="text-sm mt-2">
+          Designed and developed a responsive, visually engaging website for Science Inside Out LLC,
+          providing class schedules, booking options, and an easy content management workflow.
+        </p>
+        <a href="https://scienceinsideout.org" class="text-blue-500 hover:underline mt-4 inline-block" target="_blank">
+          Visit Website
+        </a>
+      </div>
+
+    </div>
+  </section>
 </Layout>
+
